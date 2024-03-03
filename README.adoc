@@ -1,0 +1,14 @@
+= Regex : Maitrisez votre expression (régulière)
+
+Ce dépôt regroupe les sources ainsi que les slides pour ma présentation sur les regex.
+
+This repository rassembles all the sources and slides for my talk about regexes (in french).
+
+== Generate
+
+Generate talk slides using :
+
+[source, bash]
+----
+docker run -it -u $(id -u):$(id -g) --mount type=bind,source=$PWD/talk-pages,target=/documents asciidoctor/docker-asciidoctor 'asciidoctor-revealjs index.adoc'
+----
