@@ -4,7 +4,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   workflow_dispatch:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "writing-conference" ]
   # Allows you to run this workflow manually from the Actions tab
 permissions :
   contents : write
