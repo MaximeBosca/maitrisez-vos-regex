@@ -1,1 +1,6 @@
-= Regex : Maîtrisez vos expressions régulières
+= Regex : Maîtrisez votre expression (régulière)
+:revealjs_theme: gop
+:revealjs_slideNumber: true
+:revealjs_pdfseparatefragments: false
+
+include::syntaxe.adoc[]

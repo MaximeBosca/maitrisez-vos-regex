@@ -1,0 +1,28 @@
+== Syntaxe
+
+=== Briques de base
+[.step]
+
+
+=== Quantificateurs
+[.step]
+
+=== Groupes
+[.step]
+[WARNING, step=last]
+====
+[source, asciidoc]
+ ([ab])$1 != [ab][ab]
+====
+
+[.notes]
+--
+[WARNING]
+La référence de groupe n'est PAS un sucre syntaxique : elle permet de référencer la valeur matchée par un groupe, pas de recopier le groupe pour le matcher une seconde fois
+--
+
+=== Classes de caractères
+[.step]
+
+=== Classes de caractères standard
+[.step]
