@@ -53,6 +53,7 @@
 
 
 === Choix
+[.step]
 * `+a|b+` -> a ou b
 * `+a|bc+` -> a ou bc
 * `+[a-z]|ab|b{3}+` -> Une lettre minuscule ou ab ou bbb
@@ -63,6 +64,12 @@
 * `+(abc)\1+` : abcabc
 * `+(?:abc)(def)\1+` : abcdefdef
 * `+(?<minuscule>[a-z])\minuscule+` : aa ou bb ou cc ...
+
+[WARNING, %step]
+====
+`[abc]\1` N'est pas égal à `[abc][abc]`
+====
+
 [.notes]
 --
 La référence de groupe n'est PAS un sucre syntaxique : elle permet de référencer la valeur matchée par un groupe, pas de recopier le groupe pour le matcher une seconde fois
@@ -70,16 +77,18 @@ La référence de groupe n'est PAS un sucre syntaxique : elle permet de référe
 
 === Classes de caractères standard
 [.step]
-* Caractère alphanumérique (+ underscore) : `+\w+` = `+[a-zA-Z_]+`
-* Caractère non-alphanumérique : `+\W+` = `+[^a-zA-Z_]+`
-* Chiffre : `+\d+` = `+[0-9]+`
-* Non-chiffre `+\D+` = `+[^0-9]+`
-* Caractère blanc : `+\s+` = `+[ \t\r\n\v\f]+` ou `+[ \t]+`
-* Caractère non-blanc : `+\S+` = `+[^ \t\r\n\v\f]+` ou `+[^ \t]+`
-* Caractère : `+\S+` = `+[^ \t\r\n\v\f]+` ou `+[^ \t]+`
-* Lettre : `+\a+` = `+[a-zA-Z]+`
-* Lettre minuscule : `+\l+` = `+[a-z]+`
-* Lettre majuscule : `+\u+` = `+[A-Z]+`
+* `+\w+` : Caractère alphanumérique (+ underscore) `+[a-zA-Z_]+`
+* `+\W+` : Caractère non-alphanumérique `+[^a-zA-Z_]+`
+* `+\d+` : Chiffre : = `+[0-9]+`
+* `+\D+` : Non-chiffre `+[^0-9]+`
+* `+\s+` : Caractère blanc `+[ \t\r\n\v\f]+` ou `+[ \t]+`
+* `+\S+` : Caractère non-blanc `+[^ \t\r\n\v\f]+` ou `+[^ \t]+`
+* `+\a+` : Lettre `+[a-zA-Z]+`
+* `+\l+` : Lettre minuscule `+[a-z]+`
+* `+\u+` : Lettre majuscule `+[A-Z]+`
 
 [.notes]
+--
 Lettre majuscule s'écrit avec un u minuscule, ce qui s'explique, car la majuscule correspond à la négation pour les classes de caractères.
+--
+
