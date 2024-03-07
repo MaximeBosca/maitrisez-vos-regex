@@ -4,31 +4,24 @@
 === Briques de base
 
 [.column]
----
-[step=1]
+--
+[.step]
 * Caractères réguliers (lettres, chiffres, ...)
-[step=3]
 * `.` : Caractère générique
-[step=5]
 * `^` : Caractère de début de ligne
 * `$` : Caractère de fin de ligne
 * `\` : Caractère d'échappement
----
+--
 [.column]
----
-[step=2]
 --
 Exemple :
+[.step]
 * `a` ->a
 * `aB` -> aB
 * `0` -> 0
---
-[step=4]
---
 * `.` -> a
 * `.` -> 0
 --
----
 
 
 === Quantificateurs
