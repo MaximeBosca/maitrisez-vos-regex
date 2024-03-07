@@ -5,6 +5,7 @@
 :autofit-option:
 :icons: font
 :revealjs_totalTime: 1800
+:source-highlighter: highlight.js
 :highlightjs-languages: Java
 
 include::definitions.adoc[]
