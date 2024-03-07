@@ -14,7 +14,6 @@
 --
 [.column]
 --
-Exemple :
 [.step]
 * `a` ->a
 * `aB` -> aB
@@ -23,72 +22,87 @@ Exemple :
 * `.` -> 0
 --
 
-
+[.columns]
 === Quantificateurs
+[.column]
+--
 [.step]
 * `+?+` : 0 ou 1 fois
 * `+*+` : 0, 1, ou plusieurs fois
 * `pass:[+]` : 1 fois ou plus
 *  `+{m,n}+` : m à n fois
 * `+{n}+` `+{m,}+` `+{,n}+`
+--
+[.column]
+--
+[.step]
+* `a?` -> ε ou a
+* `a*` -> ε ou a ou aa, etc
+* `apass:[+]` -> a ou aa, ou aaa, etc.
+* `+a{1,4}+` -> a ou aa ou aaa ou aaaa
+* `+a{,3}+` -> ε ou a ou aa ou aaa
+* `+a{3}+` -> aaa
+--
 
+[.columns]
 === Classes de caractères
+[.column]
+--
 [.step]
 * `[abc]` a b ou c
 * `[^abc]` Un caractère qui n'est pas a b ou c
 * `[a-z]` Une lettre minuscule
 * `[a-fhi-wyz]` Une lettre minuscule sauf g et x
+--
+[.column]
+--
 
+--
+
+[.columns]
 === Choix
+[.column]
+--
 * `+a|b+` : a ou b
 * `+a|bc+` : a ou bc
 * `+[a-z]|a*|b{3}+` :
+--
+[.column]
+--
 
+--
+
+[.columns]
 === Groupes
+[.column]
+--
 [.step]
 * `+(abc)+` : abc
 * `+(abc)\1+` : abcabc
 * `+(?:abc)(def)\1+` : abcdefdef
 * `+(?<minuscule>[a-z])\minuscule+` : aa ou bb ou cc ...
+--
+[.column]
+--
 
-[WARNING, %step]
-`([ab])\1 != [ab][ab]`
-
+--
 [.notes]
 --
-[WARNING]
 La référence de groupe n'est PAS un sucre syntaxique : elle permet de référencer la valeur matchée par un groupe, pas de recopier le groupe pour le matcher une seconde fois
 --
 
 === Classes de caractères standard
-[fade-in-then-out%step]
+[.step]
 * Caractère alphanumérique (+ underscore) : `+\w+` = `+[a-zA-Z_]+`
 * Caractère non-alphanumérique : `+\W+` = `+[^a-zA-Z_]+`
-
-[fade-in-then-out,step=2]
-Chiffre : `+\d+` = `+[0-9]+`
-
-[fade-in-then-out,step=2]
-Non-chiffre `+\D+` = `+[^0-9]+`
-
-Caractère blanc : `+\s+` = `+[ \t\r\n\v\f]+` ou `+[ \t]+`
-
-Caractère non-blanc : `+\S+` = `+[^ \t\r\n\v\f]+` ou `+[^ \t]+`
-
-Caractère : `+\S+` = `+[^ \t\r\n\v\f]+` ou `+[^ \t]+`
-
-| Lettre
-| `+\a+`
-| `+[a-zA-Z]+`
-
-| Lettre minuscule
-| `+\l+`
-| `+[a-z]+`
-
-| Lettre majuscule
-| `+\u+`
-| `+[A-Z]+`
+* Chiffre : `+\d+` = `+[0-9]+`
+* Non-chiffre `+\D+` = `+[^0-9]+`
+* Caractère blanc : `+\s+` = `+[ \t\r\n\v\f]+` ou `+[ \t]+`
+* Caractère non-blanc : `+\S+` = `+[^ \t\r\n\v\f]+` ou `+[^ \t]+`
+* Caractère : `+\S+` = `+[^ \t\r\n\v\f]+` ou `+[^ \t]+`
+* Lettre : `+\a+` = `+[a-zA-Z]+`
+* Lettre minuscule : `+\l+` = `+[a-z]+`
+* Lettre majuscule : `+\u+` = `+[A-Z]+`
 
 [.notes]
 Lettre majuscule s'écrit avec un u minuscule, ce qui s'explique, car la majuscule correspond à la négation pour les classes de caractères.
-
