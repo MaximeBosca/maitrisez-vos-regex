@@ -1,0 +1,2 @@
+== Conseils et bonnes pratiques
+* Documentez vos regex !

@@ -10,7 +10,7 @@
 * Les caractères simples, joker ( . ) et de début et fin de ligne (^ et $) : 2 minutes
 * Les quantificateurs ( *  ? + et {n,m} ) :  3 minutes
 * Groupes et références de groupes ($1, etc) : 3 minutes
-*  Classes de caractères ( [] et [^] ) et choix ( | ) : 2 minutes
+* Classes de caractères ( [] et [^] ) et choix ( | ) : 2 minutes
 * Classes de caractères standard (/w /d, etc) :  2 minutes
 
 **Usages courants** (9 minutes)

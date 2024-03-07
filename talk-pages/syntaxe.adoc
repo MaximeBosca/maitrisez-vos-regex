@@ -2,14 +2,33 @@
 
 === Briques de base
 [.step]
-
+* Caractères réguliers (lettres, chiffres, ...)
+* `.` : Caractère générique
+* `^` : Caractère de début de ligne
+* `$` : Caractère de fin de ligne
+* `\` : Caractère d'échappement
 
 === Quantificateurs
 [.step]
+* `+?+` : 0 ou 1 fois
+* `+*+` : 0, 1, ou plusieurs fois
+* `+++` : 1 fois ou plus
+*  `+{m,n}+` : m à n fois
+* `+{n}+` `+{m,}+` `+{,n}+`
+
+=== Classes de caractères
+[.step]
+* `[abc]` a b ou c
+* `[^abc]` Tout SAUF a b ou c
+* `[a-z]`
+
+=== Choix
+* a|b
 
 === Groupes
 [.step]
-[WARNING, step=last]
+
+[WARNING, step=4]
 ====
 [source, asciidoc]
  ([ab])$1 != [ab][ab]
@@ -20,9 +39,6 @@
 [WARNING]
 La référence de groupe n'est PAS un sucre syntaxique : elle permet de référencer la valeur matchée par un groupe, pas de recopier le groupe pour le matcher une seconde fois
 --
-
-=== Classes de caractères
-[.step]
 
 === Classes de caractères standard
 [.step]
