@@ -1,3 +1,13 @@
-== Conseils et bonnes pratiques
+== Conseils
+
+[.step]
+* Commencez simple
+* Pensez à la lisibilité
+* Testez à chaque étape
 * Documentez vos regex !
+
+[.notes]
+--
+Classes de caractères et quantificateurs
+--
 

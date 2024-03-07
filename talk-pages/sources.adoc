@@ -1,0 +1,8 @@
+== Sources
+[.step]
+* http://regex101.com[regex101]
+* https://regexcrossword.com/[regexcrossword]
+* https://www.regular-expressions.info/[regular-expressions.info]
+* Mastering Regular Expressions by Jeffrey E. F. Friedl
+* icon:github[] Github : https://github.com/MaximeBosca/maitrisez-vos-regex[MaximeBosca/maitrisez-vos-regex]
+
