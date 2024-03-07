@@ -1,7 +1,8 @@
 == Syntaxe
 
-=== Briques de base
 [.columns]
+=== Briques de base
+
 [.column]
 --
 [step=1]
