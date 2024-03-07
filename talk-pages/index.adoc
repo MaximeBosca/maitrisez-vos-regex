@@ -8,5 +8,5 @@
 
 include::intro.adoc[]
 include::syntaxe.adoc[]
-include::usage.adoc[]
+include::usages.adoc[]
 include::outro.adoc[]
