@@ -15,7 +15,7 @@
 [.column]
 --
 [.step]
-* `a` ->a
+* `a` -> a
 * `aB` -> aB
 * `0` -> 0
 * `.` -> a
@@ -31,7 +31,7 @@
 * `+*+` : 0, 1, ou plusieurs fois
 * `pass:[+]` : 1 fois ou plus
 *  `+{m,n}+` : m à n fois
-* `+{n}+` `+{m,}+` `+{,n}+`
+* `+{n}+` `+{m,}+` `+{,n}+` : Autres quantificateurs
 --
 [.column]
 --
@@ -44,48 +44,25 @@
 * `+a{3}+` -> aaa
 --
 
-[.columns]
 === Classes de caractères
-[.column]
---
 [.step]
-* `[abc]` a b ou c
-* `[^abc]` Un caractère qui n'est pas a b ou c
-* `[a-z]` Une lettre minuscule
-* `[a-fhi-wyz]` Une lettre minuscule sauf g et x
---
-[.column]
---
+* `[abc]` -> a b ou c
+* `[^abc]` -> Un caractère qui n'est pas a b ou c
+* `[a-z]` -> Une lettre minuscule
+* `[a-fh]` -> a à f
 
---
 
-[.columns]
 === Choix
-[.column]
---
-* `+a|b+` : a ou b
-* `+a|bc+` : a ou bc
-* `+[a-z]|a*|b{3}+` :
---
-[.column]
---
+* `+a|b+` -> a ou b
+* `+a|bc+` -> a ou bc
+* `+[a-z]|ab|b{3}+` -> Une lettre minuscule ou ab ou bbb
 
---
-
-[.columns]
 === Groupes
-[.column]
---
 [.step]
 * `+(abc)+` : abc
 * `+(abc)\1+` : abcabc
 * `+(?:abc)(def)\1+` : abcdefdef
 * `+(?<minuscule>[a-z])\minuscule+` : aa ou bb ou cc ...
---
-[.column]
---
-
---
 [.notes]
 --
 La référence de groupe n'est PAS un sucre syntaxique : elle permet de référencer la valeur matchée par un groupe, pas de recopier le groupe pour le matcher une seconde fois
