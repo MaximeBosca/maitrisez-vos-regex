@@ -1,6 +1,9 @@
 == Syntaxe
 
 === Briques de base
+[.columns]
+[.column]
+--
 [step=1]
 --
 * Caractères réguliers (lettres, chiffres, ...)
@@ -9,26 +12,25 @@
 --
 * `.` : Caractère générique
 --
-[.step]
 * `^` : Caractère de début de ligne
 * `$` : Caractère de fin de ligne
 * `\` : Caractère d'échappement
-
-
-.Exemple
-****
-[fade-in-then-out,step=1]
 --
-* `a` -> a
+[.column]
+[step=1]
+--
+Exemple :
+
+* `a` ->a
 * `aB` -> aB
 * `0` -> 0
 --
-[fade-in-then-out,step=2]
+[step=2]
 --
-* `.` -> a, b, C, 0, 1, !,...
+* `.` -> a
+* `.` -> 0
 --
 
-****
 
 === Quantificateurs
 [.step]
