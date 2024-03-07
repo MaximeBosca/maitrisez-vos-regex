@@ -6,7 +6,7 @@
 :icons: font
 :revealjs_totalTime: 1800
 
-include::intro.adoc[]
+include::definitions.adoc[]
 include::syntaxe.adoc[]
 include::usages.adoc[]
 include::outro.adoc[]
