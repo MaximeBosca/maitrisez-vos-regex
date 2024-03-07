@@ -7,10 +7,8 @@ Le concept d'expression régulière vient du principe des langages réguliers
 IDEE : mettre une image d'automate
 --
 
-[%step]
---
-Alphabet
---
+
+=== Alphabet
 
 [.notes]
 --
@@ -24,25 +22,22 @@ Quand on parle de caractères et de mots, on parle du point de vue informatique,
 * `+{0, 1}+` et `+{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F}+`
 * `+{ε}+`
 
-[%step]
---
-Mot
---
+
+=== Mot
+
 [.step]
 * 1
 * 1389
 * 31 000
 * 01 01 01 01 01
+* ε
 
 [.notes]
 --
 Un mot est composé de plusieurs caractères provenant d'un alphabet.
 --
 
-[%step]
---
-Langage
---
+=== Langage
 
 [.notes]
 --
