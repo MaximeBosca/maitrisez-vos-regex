@@ -7,8 +7,8 @@ https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Pat
 ----
 Pattern p = Pattern.compile("([ab])\\1");
 Matcher m = p.matcher("aa");
-m.matches(); // true
-Pattern.matches("([ab])\\1", "aa"); // true
+m.matches(); /* true */
+Pattern.matches("([ab])\\1", "aa"); /* true */
 ----
 
 === !
@@ -16,18 +16,18 @@ Pattern.matches("([ab])\\1", "aa"); // true
 ----
 Pattern p = Pattern.compile("([ab])\\1");
 Matcher m = p.matcher("aabbcc");
-m.matches(); // false
+m.matches(); /* false */
 
-m.find(); // true
-m.start(); // 0
-m.end(); // 2
-m.find(); // true
-m.start(); // 2
-m.end(); // 4
-m.find(); // false
+m.find(); /* true */
+m.start(); /* 0 */
+m.end(); /* 2 */
+m.find(); /* true */
+m.start(); /* 2 */
+m.end(); /* 4 */
+m.find(); /* false */
 
-p.split("aabbcc"); // ["", "", "cc"]
-p.splitWithDelimiters("aabbcc",0); // ["", "aa", "", "bb", "cc"]
+p.split("aabbcc"); /* ["", "", "cc"] */
+p.splitWithDelimiters("aabbcc",0); /* ["", "aa", "", "bb", "cc"] */
 ----
 
 === Python
