@@ -65,7 +65,7 @@
 * `+(?:abc)(def)\1+` : abcdefdef
 * `+(?<minuscule>[a-z])\minuscule+` : aa ou bb ou cc ...
 
-[WARNING, %step]
+[WARNING.step]
 ====
 `[abc]\1` N'est pas égal à `[abc][abc]`
 ====
