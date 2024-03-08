@@ -4,6 +4,7 @@
 * Commencez simple
 * Pensez à la lisibilité
 * Testez à chaque étape
+* Attention aux caractères d'échappement
 * Documentez vos regex !
 
 [.notes]
