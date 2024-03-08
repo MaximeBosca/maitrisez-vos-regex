@@ -31,11 +31,28 @@ p.splitWithDelimiters("aabbcc",0); /* ["", "aa", "", "bb", "cc"] */
 ----
 
 === Python
+https://docs.python.org/3/howto/regex.html[module re]
 
+[source, python, highlight=1..13|1..2|3..6|7|9|11..13]
+----
+p = re.compile('([ab])\\1')
+m = p.match("aabbcc")  # <re.Match object; span=(0, 2), match='aa'>
+m.group() # aa
+m.start() # 0
+m.end() # 2
+m.span() # (0,2)
+p.match("ccbbaa") # None
+
+p.search("ccbbaa") # <re.Match object; span=(2, 4), match='bb'>
+
+iterator = p.finditer('aabbcc')
+for match in iterator:
+    match.span() # (0, 2) et (2, 4)
+----
 
 === SQL
 
 === Find/Replace
 
-=== Unix
+// === Unix
 
