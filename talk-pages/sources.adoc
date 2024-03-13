@@ -6,3 +6,8 @@
 * Mastering Regular Expressions by Jeffrey E. F. Friedl
 * icon:github[] Github : https://github.com/MaximeBosca/maitrisez-vos-regex[MaximeBosca/maitrisez-vos-regex]
 
+
+=== Plus loin
+* Greedy vs Lazy
+* Backtracking vs Possessivité
+* Recursivité et Appels Subroutine

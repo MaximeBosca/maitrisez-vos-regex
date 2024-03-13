@@ -1,0 +1,19 @@
+[cols = "1,2"]
+|===
+| Langage
+| Implémentation
+
+
+| Java
+| https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Pattern.html[java.util.regex]
+
+
+| Python
+| https://docs.python.org/3/howto/regex.html[re]
+
+
+| Javascript
+| https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions[RegExp]
+
+
+|===
