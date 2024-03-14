@@ -22,6 +22,15 @@
 * `.` -> 0
 --
 
+=== Classes de caractères
+[.step]
+* `[abc]` -> a b ou c
+* `[^abc]` -> Un caractère qui n'est pas a b ou c
+* `[a-z]` -> Une lettre minuscule
+* `[a-zA-Z]` -> Une lettre minuscule ou majuscule
+* `[a-fh]` -> a à f ou h
+
+
 [.columns]
 === Quantificateurs
 [.column]
@@ -44,15 +53,6 @@
 * `+a{3}+` -> aaa
 --
 
-=== Classes de caractères
-[.step]
-* `[abc]` -> a b ou c
-* `[^abc]` -> Un caractère qui n'est pas a b ou c
-* `[a-z]` -> Une lettre minuscule
-* `[a-zA-Z]` -> Une lettre minuscule ou majuscule
-* `[a-fh]` -> a à f ou h
-
-
 === Choix
 [.step]
 * `+a|b+` -> a ou b
@@ -64,7 +64,7 @@
 * `+(abc)+` : abc
 * `+(abc)\1+` : abcabc
 * `+(?:abc)(def)\1+` : abcdefdef
-* `+(?<minuscule>[a-z])\minuscule+` : aa ou bb ou cc ...
+* `+(?<minuscule>[a-z])\g<minuscule>+` : aa ou bb ou cc ...
 
 [%step]
 --
