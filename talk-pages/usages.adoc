@@ -7,12 +7,18 @@ include::languages-cheat-sheet.adoc[]
 
 https://www.postgresql.org/docs/current/functions-matching.html[PostgreSQL] et https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Pattern-matching-Conditions.html[Oracle]
 
-[source, sql, %step]
+[%step]
+--
+[source, sql]
 REGEXP_LIKE(expression, pattern [, match_parameter])
+--
 
-[source, sql, %step]
+[%step]
+--
+[source, sql]
 SELECT prenom FROM collaborateurs_onepoint
 WHERE REGEXP_LIKE(prenom, '^K(y|i)ll?ian$')
+--
 
 === Find/Replace
 

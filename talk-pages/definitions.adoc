@@ -18,7 +18,7 @@ Quand on parle de caractères et de mots, on parle du point de vue informatique,
 
 [.step]
 * Alphabet Latin
-* `+{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, _ }+`
+* `+{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, . , }+`
 * `+{ 0, 1 }+` et `+{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F }+`
 
 === Mot
@@ -27,7 +27,8 @@ Quand on parle de caractères et de mots, on parle du point de vue informatique,
 * 1
 * 1389
 * 31 000
-* 01 01 01 01 01
+* 01.01.01.01.01
+* 192.168.0.1
 
 [.notes]
 --
@@ -44,5 +45,6 @@ Un langage est un sous ensemble de tous les mots possibles formés à partir d'u
 [.step]
 * Numéros de téléphone français
 * Codes Postaux
+* Adresses IPv4
 
 
