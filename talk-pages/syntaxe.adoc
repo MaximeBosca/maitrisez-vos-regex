@@ -22,6 +22,12 @@
 * `.` -> 0
 --
 
+=== Choix
+[.step]
+* `+a|b+` -> a ou b
+* `+a|bc+` -> a ou bc
+
+
 === Classes de caractères
 [.step]
 * `[abc]` -> a b ou c
@@ -53,11 +59,6 @@
 * `+a{3}+` -> aaa
 --
 
-=== Choix
-[.step]
-* `+a|b+` -> a ou b
-* `+a|bc+` -> a ou bc
-* `+[a-z]|ab|b{3}+` -> Une lettre minuscule ou ab ou bbb
 
 === Groupes
 [.step]

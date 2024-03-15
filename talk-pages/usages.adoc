@@ -1,6 +1,6 @@
 == Utilisation des regex
 
-=== Implémentations dans les langages
+=== !
 include::languages-cheat-sheet.adoc[]
 
 === SQL
